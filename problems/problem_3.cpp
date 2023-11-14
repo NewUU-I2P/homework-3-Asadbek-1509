@@ -1,38 +1,46 @@
-#include <iostream> 
-using namespace std;
+#include <string>
 
-int problemSolution3() {
+std::string problemSolution3(float height, char sex) {
 
-    char  sex;
-    double height;
+    std::string result;
 
-
-    cout << " ";
-    cin >> sex;
-    cout << " ";
-    cin >> height;
 
     if (sex == 'M') {
         if (height < 1.70) {
-            cout << "Short" << endl;
+            result = "Short";
         } else if (height >= 1.70 && height < 1.85) {
-            cout << "Normal" << endl;
-        } else if ( height >= 1.85) {
-            cout << "Tall" << endl;
+            result = "Normal";
+        } else if (height >= 1.85) {
+            result = "Tall";
         }
     }
 
     else if (sex == 'F') {
         if (height < 1.60) {
-            cout << "Short" << endl;
+            result = "Short";
         } else if (height >= 1.60 && height < 1.75) {
-            cout << "Normal" << endl;
-        } else if ( height >= 1.75 ){
-            cout << "Tall" << endl;
+            result = "Normal";
+        } else if (height >= 1.75) {
+            result = "Tall";
         }
     }
 
 
+    return result;
 
-    return 0;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
