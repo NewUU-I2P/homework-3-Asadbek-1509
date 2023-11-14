@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-int main() {
+int problemSolution3() {
 
     char  sex;
     double height;
