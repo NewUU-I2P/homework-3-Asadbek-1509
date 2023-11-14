@@ -2,10 +2,6 @@
 #include <sstream>
 
 std::string problemSolution4(const std::string &macAddress) {
-  #include <string>
-#include <sstream>
-
-std::string problemSolution4(const std::string &macAddress) {
     std::string first_octet = macAddress.substr(0, 8);
 
     std::stringstream ss;
@@ -22,5 +18,3 @@ std::string problemSolution4(const std::string &macAddress) {
     }
 }
 
-
-}
